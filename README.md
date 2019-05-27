@@ -16,7 +16,7 @@
     a. `cd` (to take you to the top level of your home directory)  
     b. `mkdir trinity_working_example` (create a directory to work in)  
     c. `cd trinity_working_example` (to change into the directory)  
-    d. `cp  ~/shared/data/example_ASC_queue_scripts/Trinity_example.sh .`  (note the period at the end of the command, which means “copy the script to your current location, using the same filename)  
+    d. `cp  /home/shared/biobootcamp/data/example_ASC_queue_scripts/Trinity_example.sh .`  (note the period at the end of the command, which means “copy the script to your current location, using the same filename)  
 
 1) Now use either a text editor, **less**, or **cat** to examine the script:
 
@@ -26,8 +26,8 @@
 
 1) Let’s copy some raw FASTQ data to our working directory. **Here, and throughout the workshop, use the convenience of tab-completion and command-recall (up arrow) to save time and avoid typos**.
 
-        cp ~/shared/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/Lamellibrachia_luymesi_transcriptomic_sub1M_L001_R1_001.fastq .
-        cp ~/shared/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/Lamellibrachia_luymesi_transcriptomic_sub1M_L001_R2_001.fastq .   
+        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/Lamellibrachia_luymesi_transcriptomic_sub1M_L001_R1_001.fastq .
+        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/Lamellibrachia_luymesi_transcriptomic_sub1M_L001_R2_001.fastq .   
 
 1) Quantify the number of reads in each file and error check them using `wc –l` and fastQValidator (as discussed in lecture). NOTE: While you worked with these files earlier, the fact that you just created new copies of them introduces a potential source of error e.g. a truncated or corrupted copy.  Remember: **always employ controls**.
 
@@ -55,7 +55,7 @@
     a. `cd`   (to take you – wherever you are – to your home directory).   
     b. `mkdir ray_working_example`  (create a new directory to work in).  
     c. `cd ray_working_example`  (to move into the new directory).  
-    d. `cp ~/shared/data/example_ASC_queue_scripts/RAY_example.sh .`  (to copy the script to your current location).  
+    d. `cp /home/shared/biobootcamp/data/example_ASC_queue_scripts/RAY_example.sh .`  (to copy the script to your current location).  
 
 1) Now use a text editor to open the script: e.g. `nano Ray_example.sh`
 
@@ -63,8 +63,8 @@
 
 1) Let’s copy some different raw FASTQ files to our working directory:
 
-        cp ~/shared/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/ Lamellibrachia_luymesi_genomic_L001_R1_001.fastq .
-        cp ~/shared/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/ Lamellibrachia_luymesi_genomic_L001_R2_001.fastq .
+        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/ Lamellibrachia_luymesi_genomic_L001_R1_001.fastq .
+        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/ Lamellibrachia_luymesi_genomic_L001_R2_001.fastq .
 
     hint: use up arrow to recall previous command and then edit it inline using left and right arrow keys, Ctrl-A and Ctrl-E
 
@@ -83,7 +83,7 @@
 
 #### Notes:
 
-• Everyone has a symlink or shortcut to the shared bootcamp directory called **shared** in their home folder. As in examples above we can type “shared” in place of the absolute path /home/shared/biobootcamp/    e.g. `cat shared/data/example_ASC_queue_scripts/Trinity_example.sh` for this exercise and all other bootcamp activities this week. If you aren’t currently in your home directory, we use ~/shared, where the tilde always means _your_ home directory.
+• Everyone has a symlink or shortcut to the shared bootcamp directory called **shared** in their home folder. As in examples above we can type “shared” in place of the absolute path /home/shared/biobootcamp/    e.g. `cat /home/shared/biobootcamp/data/example_ASC_queue_scripts/Trinity_example.sh` for this exercise and all other bootcamp activities this week. If you aren’t currently in your home directory, we use ~/shared, where the tilde always means _your_ home directory.
 
 • **Resize** your terminal window and choose font and screen background color to suit your preference and increase legibility.
 

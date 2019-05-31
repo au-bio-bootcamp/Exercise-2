@@ -85,6 +85,6 @@
 
 • Everyone has a symlink or shortcut to the shared bootcamp directory called **biobootcamp** in their home folder. You can type “biobootcamp” in place of the absolute path /home/shared/biobootcamp/    e.g. `cat biobootcamp/data/example_ASC_queue_scripts/Trinity_example.sh` for this exercise and all other bootcamp activities this week. If you aren’t currently in your home directory, we use `~/biobootcamp` , where the tilde always means _your_ home directory.
 
-• **Resize** your terminal window and choose font and screen background color to suit your preference and increase legibility.
+• Resize your terminal window and choose font and screen background color to suit your preference and increase legibility.
 
 • Try the command `echo $$` by itself. This number is unique to your login session and gives your file variables a unique name as a result.   Lookup the man page for the command `ps`, then try typing `ps` from the prompt.  Recognize your number?

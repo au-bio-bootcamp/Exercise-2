@@ -18,7 +18,7 @@
     c. `cd trinity_working_example` (to change into the directory)  
     d. `cp  /home/shared/biobootcamp/data/example_ASC_queue_scripts/Trinity_example.sh .`  (note the period at the end of the command, which means “copy the script to your current location, using the same filename)  
 
-1) Now use either a text editor, **less**, or **cat** to examine the script:
+1) Now use either a text editor, `less`, or `cat` to examine the script:
 
     a. e.g. `nano Trinity_example.sh`. Read through the entire script to get an overall idea of what is being done.   
 
@@ -31,7 +31,7 @@
 
 1) Quantify the number of reads in each file and error check them using `wc –l` and fastQValidator (as discussed in lecture). NOTE: While you worked with these files earlier, the fact that you just created new copies of them introduces a potential source of error e.g. a truncated or corrupted copy.  Remember: **always employ controls**.
 
-1) Open the **Trinity_example.sh**  script with nano and add the names of the \*.fastq files to their appropriate sections. NOTE: the \*_L001_R1_001.fastq file should be associated with the `--left` option while the *_L001_R2_001.fastq file is associated with the `--right` option. These R1 / R2 names are standard for Illumina paired-end reads.
+1) Open the `Trinity_example.sh`  script with nano and add the names of the \*.fastq files to their appropriate sections. NOTE: the `*_L001_R1_001.fastq` file should be associated with the `--left` option while the `*_L001_R2_001.fastq` file is associated with the `--right` option. These R1 / R2 names are standard for Illumina paired-end reads.
 
 1) Save your script and exit out of nano.  Submit it to the ASC queue system **using the directions at the bottom of the script**.
 
@@ -48,7 +48,7 @@
     a. Go to https://hpcdocs.asc.edu/ and log in with your ASC credentials.  
     b. Click on "Sequence_assembly", then "Ray".  
 
-1) From the README above, you will need a script to run Ray. An example script named **RAY_example.sh** is located at: ~/shared/data/example_ASC_queue_scripts  
+1) From the README above, you will need a script to run Ray. An example script named `RAY_example.sh` is located at: `/home/shared/biobootcamp/data/example_ASC_queue_scripts`
 
 1) You will want to make a copy of the script to your current Ray workspace (directory). Let’s do that:  
 
@@ -70,9 +70,9 @@
 
 1) Quantify the number of reads in each file and error check them using `wc –l` and fastQValidator (as done previously) and make note of what they are.
 
-1) Open the **Ray_example.sh** script with nano and add the names of the \*.fastq files to their appropriate sections. NOTE: the \*_L001_R1_001.fastq file should precede the \*_L001_R2_001.fastq file going left to right following the `–p` option. Also set the `–o` option to an appropriate name of your choosing.
+1) Open the `Ray_example.sh` script with nano and add the names of the `*.fastq` files to their appropriate sections. NOTE: the `*_L001_R1_001.fastq` file should precede the `*_L001_R2_001.fastq` file going left to right following the `–p` option. Also set the `–o` option to an appropriate name of your choosing.
 
-1) **NOTE:** for this part of the exercise, your group needs to discuss the first option, namely potential values for `–k` (which sets the  k-mer length used in the assembly). Base your discussion on the materials covered during the lecture. Some specifics regarding values for k:  a) the default value is 21;  b) the value must be odd. The odd k-mer size preserves the direction of repetitive or palindromic sequences when they are reverse complemented during the assembly process. For example forward strand ATAT equals its reverse complement ATAT, but forward strand ATATA does not equal its reverse complement TATAT. This simple trick helps the assembler put the kmers together more efficiently and with less ambiguity;  c) larger k-mers utilize more memory. Once the group has selected four potential values for the `–k` option, each person will add one of these values to their Ray_example.sh, replacing (hint: or using) the value of –k 31 that is already there. Be forewarned: extreme outliers for `–k` might lead to the assembly imploding (and taking you with it).
+1) **NOTE:** for this part of the exercise, your group needs to discuss the first option, namely potential values for `–k` (which sets the  k-mer length used in the assembly). Base your discussion on the materials covered during the lecture. Some specifics regarding values for k:  a) the default value is 21;  b) the value must be odd. The odd k-mer size preserves the direction of repetitive or palindromic sequences when they are reverse complemented during the assembly process. For example forward strand ATAT equals its reverse complement ATAT, but forward strand ATATA does not equal its reverse complement TATAT. This simple trick helps the assembler put the kmers together more efficiently and with less ambiguity;  c) larger k-mers utilize more memory. Once the group has selected four potential values for the `–k` option, each person will add one of these values to their `Ray_example.sh`, replacing (hint: or using) the value of –k 31 that is already there. Be forewarned: extreme outliers for `–k` might lead to the assembly imploding (and taking you with it).
 
 
 1) Save your script and exit out of nano. Now submit it to the ASC queue system using the directions at the bottom of the script. Hint: `cat` it out to have in front of you while you enter parameters into the queue.
@@ -83,7 +83,7 @@
 
 #### Notes:
 
-• Everyone has a symlink or shortcut to the shared bootcamp directory called **biobootcamp** in their home folder. You can type “biobootcamp” in place of the absolute path /home/shared/biobootcamp/    e.g. `cat biobootcamp/data/example_ASC_queue_scripts/Trinity_example.sh` for this exercise and all other bootcamp activities this week. If you aren’t currently in your home directory, we use `~/biobootcamp` , where the tilde always means _your_ home directory.
+• Everyone has a symlink or shortcut to the shared bootcamp directory called `biobootcamp` in their home folder. You can type “biobootcamp” in place of the absolute path /home/shared/biobootcamp/    e.g. `cat biobootcamp/data/example_ASC_queue_scripts/Trinity_example.sh` for this exercise and all other bootcamp activities this week. If you aren’t currently in your home directory, we use `~/biobootcamp` , where the tilde always means _your_ home directory.
 
 • Resize your terminal window and choose font and screen background color to suit your preference and increase legibility.
 

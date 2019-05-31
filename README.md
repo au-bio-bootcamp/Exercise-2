@@ -63,8 +63,8 @@
 
 1) Let’s copy some different raw FASTQ files to our working directory:
 
-        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/ Lamellibrachia_luymesi_genomic_L001_R1_001.fastq .
-        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/ Lamellibrachia_luymesi_genomic_L001_R2_001.fastq .
+        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/Lamellibrachia_luymesi_genomic_L001_R1_001.fastq .
+        cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/Lamellibrachia_luymesi_genomic_L001_R2_001.fastq .
 
     hint: use up arrow to recall previous command and then edit it inline using left and right arrow keys, Ctrl-A and Ctrl-E
 

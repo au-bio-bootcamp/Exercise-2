@@ -83,7 +83,7 @@
 
 #### Notes:
 
-• Everyone has a symlink or shortcut to the shared bootcamp directory called `biobootcamp` in their home folder. You can type “biobootcamp” in place of the absolute path /home/shared/biobootcamp/    e.g. `cat biobootcamp/data/example_ASC_queue_scripts/Trinity_example.sh` for this exercise and all other bootcamp activities this week. If you aren’t currently in your home directory, we use `~/biobootcamp` , where the tilde always means _your_ home directory.
+• Everyone has a symlink or shortcut to the shared bootcamp directory called `biobootcamp` in their home folder. You can type “biobootcamp” in place of the absolute path `/home/shared/biobootcamp/`    e.g. `cat biobootcamp/data/example_ASC_queue_scripts/Trinity_example.sh` for this exercise and all other bootcamp activities this week. If you aren’t currently in your home directory, we use `~/biobootcamp` , where the tilde always means _your_ home directory.
 
 • Resize your terminal window and choose font and screen background color to suit your preference and increase legibility.
 

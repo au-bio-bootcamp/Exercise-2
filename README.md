@@ -9,7 +9,7 @@
     b. Click on "Sequence_assembly", then "Trinity".  
 
 
-1) From the README info above, you will need a script to run Trinity. A template named **Trinity_example.sh** is included in the shared example scripts folder.
+1) From the README info above, you will need a script to run Trinity. A template named `Trinity_example.sh` is included in the shared example scripts folder.
 
 1) You will need to make a copy of the above script to your home directory. Let’s do that:
 
@@ -22,7 +22,7 @@
 
     a. e.g. `nano Trinity_example.sh`. Read through the entire script to get an overall idea of what is being done.   
 
-1) Note that comments in the script indicate where to edit once you decide exactly what you want to do. Also note that this script is much more complex than what you saw with the FASTX_example.sh script. The reason for this can be found in the Trinity README text (under ## ADVANCED EXAMPLE) as well as in the comments embedded in the script.  Close nano by typing **Ctrl-x** on your keyboard.
+1) Note that comments in the script indicate where to edit once you decide exactly what you want to do. Also note that this script is much more complex than what you saw with the FASTX_example.sh script. The reason for this can be found in the Trinity README text (under ## ADVANCED EXAMPLE) as well as in the comments embedded in the script.  Close nano by typing `Ctrl-x` on your keyboard.
 
 1) Let’s copy some raw FASTQ data to our working directory. **Here, and throughout the workshop, use the convenience of tab-completion and command-recall (up arrow) to save time and avoid typos**.
 
@@ -31,7 +31,7 @@
 
 1) Quantify the number of reads in each file and error check them using `wc –l` and fastQValidator (as discussed in lecture). NOTE: While you worked with these files earlier, the fact that you just created new copies of them introduces a potential source of error e.g. a truncated or corrupted copy.  Remember: **always employ controls**.
 
-1) Open the `Trinity_example.sh`  script with nano and add the names of the \*.fastq files to their appropriate sections. NOTE: the `*_L001_R1_001.fastq` file should be associated with the `--left` option while the `*_L001_R2_001.fastq` file is associated with the `--right` option. These R1 / R2 names are standard for Illumina paired-end reads.
+1) Open the `Trinity_example.sh`  script with nano and add the names of the `*.fastq` files to their appropriate sections. NOTE: the `*_L001_R1_001.fastq` file should be associated with the `--left` option while the `*_L001_R2_001.fastq` file is associated with the `--right` option. These R1 / R2 names are standard for Illumina paired-end reads.
 
 1) Save your script and exit out of nano.  Submit it to the ASC queue system **using the directions at the bottom of the script**.
 
@@ -59,14 +59,14 @@
 
 1) Now use a text editor to open the script: e.g. `nano Ray_example.sh`
 
-1) Note again that comments in the script indicate where to edit once you determine what you want to do. Close nano by pressing “Ctrl” and then “x” together on your keyboard (hereafter abbreviated **Ctrl-X**.
+1) Note again that comments in the script indicate where to edit once you determine what you want to do. Close nano by pressing “Ctrl” and then “x” together on your keyboard (hereafter abbreviated `Ctrl-X`.
 
 1) Let’s copy some different raw FASTQ files to our working directory:
 
         cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/Lamellibrachia_luymesi_genomic_L001_R1_001.fastq .
         cp /home/shared/biobootcamp/data/Lamellibrachia_luymesi_sequence_reads_for_assembly/Lamellibrachia_luymesi_genomic_L001_R2_001.fastq .
 
-    hint: use up arrow to recall previous command and then edit it inline using left and right arrow keys, Ctrl-A and Ctrl-E
+    hint: use up arrow to recall previous command and then edit it inline using left and right arrow keys, `Ctrl-A` and `Ctrl-E`
 
 1) Quantify the number of reads in each file and error check them using `wc –l` and fastQValidator (as done previously) and make note of what they are.
 
